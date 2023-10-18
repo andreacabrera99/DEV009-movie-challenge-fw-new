@@ -1,0 +1,37 @@
+*{
+    background: #8BA79B;
+}
+.cardsContainer{
+    display: flex;
+}
+.cards{
+    width: 170px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background: #fff;
+}
+.text{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .1px;
+    padding: .1px;
+    height: 85px;
+}
+.poster{
+    width: 150px;
+}
+.title{
+    font-family: 'urbanist', sans-serif;
+    font-size: 20px;
+    background: #fff;
+}
+.date{
+    font-family: 'urbanist', sans-serif;
+    font-size: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
