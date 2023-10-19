@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import MoviesCard from './MoviesCard'
+import './Movies.css'
 
 function Movies  () {
 
@@ -8,9 +9,7 @@ function Movies  () {
     const getMovies = async (page) => {
         const apiKey = '467e8c63831179f4c835169a5ad0ca81';
 
-        console.log(page)
-
-        const url = `https://api.themoviedb.org/3/discover/movie?page=${page}&with_genres=%2010749%2C%2010402%2C%2018&api_key=${apiKey}`;
+        const url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&with_genres=%2010749%2C%2035%2C%2010751&api_key=${apiKey}&page=${page}`;
         fetch(url)
         .then(res => res.json())
         .then(json => setMoviesList(json.results))
@@ -23,7 +22,7 @@ function Movies  () {
     console.log(moviesList)
     
  return (
-    <div>
+    <div className="movieList">
         {moviesList.map((movie, index) =>(
         <MoviesCard key={index} {...movie}/>
       ))}

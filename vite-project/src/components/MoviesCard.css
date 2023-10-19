@@ -1,11 +1,9 @@
 *{
     background: #8BA79B;
 }
-.cardsContainer{
-    display: flex;
-}
-.cards{
+.card{
     width: 170px;
+    height: 350px;
     display: grid;
     place-content: center;
     place-items: center;
@@ -24,12 +22,14 @@
     width: 150px;
 }
 .title{
-    font-family: 'urbanist', sans-serif;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter;
     font-size: 20px;
     background: #fff;
 }
 .date{
-    font-family: 'urbanist', sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: lighter;
     font-size: 15px;
     background: #fff;
     display: flex;
