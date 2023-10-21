@@ -1,12 +1,12 @@
+*{
+    margin: 0;
+}
 .header{
     display: flex;
     width: 2000px;
     height: 100px;
     background: #031D1E;
     padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
     gap: 20px;
 }
 .padding{
@@ -17,9 +17,11 @@
     color: #fff;
     font-family: Georgia;
     font-size: 2.2em;
+    margin-top: .8em;
 }
 .logo{
     background: #031D1E;
     height: 50px;
     margin-top: 1.3em;
+    margin-left: 2.5em;
 }

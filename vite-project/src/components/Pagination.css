@@ -1,0 +1,30 @@
+.pagination{
+    width:120px;
+    height: 50px;
+    border: 30%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 25px;
+}
+.button{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: #fff;
+    font-family: "Gill Sans", sans-serif;
+    font-weight:400;
+    cursor: pointer;
+}
+.arrow{
+    width: 20px;
+    height: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* darle margin left al texto del header y selección a los botones de la paginación */
