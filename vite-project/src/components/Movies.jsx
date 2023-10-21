@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import MoviesCard from './MoviesCard'
 import './Movies.css'
+import Pagination from './Pagination'
 
 function Movies  () {
 
     const [moviesList, setMoviesList] = useState([])
+    const [page, setPage] = useState(1)
     
     const getMovies = async (page) => {
         const apiKey = '467e8c63831179f4c835169a5ad0ca81';
@@ -13,19 +15,21 @@ function Movies  () {
         fetch(url)
         .then(res => res.json())
         .then(json => setMoviesList(json.results))
+
     }
 
     useEffect(() => {
-        getMovies()
-    }, [])
+        getMovies(page)
+    }, [page])
 
-    console.log(moviesList)
-    
  return (
+    <div>
     <div className="movieList">
         {moviesList.map((movie, index) =>(
         <MoviesCard key={index} {...movie}/>
       ))}
+    </div>
+    <Pagination page={page} setPage={setPage}/>
     </div>
  );
 }
