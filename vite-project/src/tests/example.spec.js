@@ -7,7 +7,7 @@ describe("Examples", () => {
     expect(1).toBe(1);
   });
 
-  it("should render Home", () => {
+  it("should render App", () => {
     render(<App />);
     screen.debug();
   });
