@@ -1,6 +1,7 @@
 ## 1.1.0 - 24/10/23
 
 ### Sprint learnings
+
 - Aprendí más a fondo qué es un componente y cómo funciona.
 - Aprendí sobre el estado de los componentes.
 - Aprendí sobre los hooks y sobre eventos.
