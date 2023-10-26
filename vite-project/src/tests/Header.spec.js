@@ -2,14 +2,15 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import Header from '../components/Header';
+import './Header.css'
 
 let header;
 let logo;
 let headerContainer;
 beforeEach(() =>{
     render(<Header/>);
-    header = screen.getAllByText('Moviebox');
-    logo = screen.getAllByAltText('logo');
+    header = screen.getByText('Moviebox');
+    logo = screen.getByAltText('logo');
     headerContainer = screen.getByTestId('header');
 })
 describe('Header', () => {
@@ -21,10 +22,8 @@ describe('Header', () => {
         expect(logo).toBeInTheDocument();
     });
 
-    test('Debería renderizar el logo del header', () => {
-        expect(logo).toHaveStyle({
-            backgroundColor: '#031D1E'
-        })
+    test('Debería tener el className logo', () => {
+        expect(logo).toHaveClass('logo')
     });
 
     test('Debería tener el className header', () => {

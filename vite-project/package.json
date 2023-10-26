@@ -45,8 +45,13 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$"
+    ],
     "moduleNameMapper": {
-      "//.(css|png)$": "<rootDir>/mocks/styleMocks.js"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "^.+\\.css$": "<rootDir>/src/mocks/file-mock.cjs",
+      "^.+\\.(css|png|jpg|jpeg)$": "<rootDir>/src/mocks/file-mock.cjs"
     }
   }
 }
