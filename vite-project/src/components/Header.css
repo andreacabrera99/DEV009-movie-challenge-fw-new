@@ -3,7 +3,7 @@
 }
 .header{
     display: flex;
-    width: 2000px;
+    width: 100%;
     height: 100px;
     background: #031D1E;
     padding: 20px;
@@ -14,7 +14,7 @@
 }
 .movieBox{
     background: #031D1E;
-    color: #fff;
+    color: white;
     font-family: Georgia;
     font-size: 2.2em;
     margin-top: .8em;
