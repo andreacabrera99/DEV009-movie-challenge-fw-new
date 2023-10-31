@@ -1,3 +1,18 @@
+## 1.1.1 - 30/10/23
+
+### Sprint learnings
+- Aprendí cómo hacer tests de componentes en React.
+- Aprendí sobre eventos y interactividad.
+
+### Added
+
+Agregué la versión estática de los componentes de la segunda historia de usuario. 
+
+### Changed
+
+Cambié el borde de las cards atendiende a feedback que recibí.
+
+
 ## 1.1.0 - 24/10/23
 
 ### Sprint learnings

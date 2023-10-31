@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1698355903519" clover="3.2.0">
-  <project timestamp="1698355903519" name="All files">
-    <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="13" coveredmethods="13" elements="43" coveredelements="43" complexity="0" loc="28" ncloc="28" packages="3" files="6" classes="6"/>
+<coverage generated="1698713112543" clover="3.2.0">
+  <project timestamp="1698713112543" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="2" coveredconditionals="2" methods="14" coveredmethods="14" elements="46" coveredelements="46" complexity="0" loc="30" ncloc="30" packages="3" files="7" classes="7"/>
     <package name="src">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.jsx" path="/Users/andreacabrera/proyecto5/DEV009-movie-challenge-fw-new/vite-project/src/App.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
+      <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="13" coveredmethods="13"/>
       <file name="Header.jsx" path="/Users/andreacabrera/proyecto5/DEV009-movie-challenge-fw-new/vite-project/src/components/Header.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
       </file>
       <file name="Movies.jsx" path="/Users/andreacabrera/proyecto5/DEV009-movie-challenge-fw-new/vite-project/src/components/Movies.jsx">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
@@ -37,6 +37,11 @@
         <line num="5" count="4" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
+      </file>
+      <file name="Order.jsx" path="/Users/andreacabrera/proyecto5/DEV009-movie-challenge-fw-new/vite-project/src/components/Order.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
       </file>
       <file name="Pagination.jsx" path="/Users/andreacabrera/proyecto5/DEV009-movie-challenge-fw-new/vite-project/src/components/Pagination.jsx">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>

@@ -25,3 +25,10 @@
     margin-top: 1.3em;
     margin-left: 2.5em;
 }
+.selectors{
+    display: flex;
+    background: #031D1E;
+    margin-top: 1.2em;
+    margin-left: 49em;
+    gap: 2em;
+}
