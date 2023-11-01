@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Order.css'
 
-const Order = () => {
+const Order = ({onSortByChange, selectedValue}) => {
 
   return (
-    <select className='selector'>
-    <option disabled selected>Order by</option>
-    <option value={"popularity"}>Popularity asc</option>
-    <option value={"popularity"}>Popularity desc</option>
-    <option value={"release"}>Release date asc</option>
-    <option value={"release"}>Release date desc</option>
-|||</select>
+    <div>
+    <select className='selector' onChange={onSortByChange} value={selectedValue}>
+    <option defaultValue>Order by</option>
+    <option value="popularity.asc">Less popular</option>
+    <option value="popularity.desc">Most popular</option>
+    <option value="release_date.asc">Oldest</option>
+    <option value="release_date.desc">Newest</option>
+  </select>
+  </div>
   )
 }
 
