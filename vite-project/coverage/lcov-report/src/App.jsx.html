@@ -25,7 +25,9 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/18</span>
+
+                <span class='fraction'>17/17</span>
+
             </div>
         
             
@@ -39,14 +41,18 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/7</span>
+
+                <span class='fraction'>7/7</span>
+
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/18</span>
+
+                <span class='fraction'>17/17</span>
+
             </div>
         
             
@@ -105,43 +111,47 @@
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a>
-<a name='L44'></a><a href='#L44'>44</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+
+<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+
+<span class="cline-any cline-yes">5x</span>
+
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,7 +159,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState, useEffect } from "react"
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState, useEffect } from "react"
+
 import Movies from "./components/Movies"
 import Header from "./components/Header"
 import Pagination from "./components/Pagination"
@@ -160,26 +173,27 @@ function App() {
   const [sortBy, setSortBy] = useState("popularity.desc");
   const [filterBy, setFilterBy] = useState("Romance");
 &nbsp;
-  const getMovies = <span class="fstat-no" title="function not covered" >(p</span>age, sortBy) =&gt; {
-    const apiKey = <span class="cstat-no" title="statement not covered" >'467e8c63831179f4c835169a5ad0ca81';</span>
+
+  const getMovies = (page, sortBy) =&gt; {
+    const apiKey = '467e8c63831179f4c835169a5ad0ca81';
 &nbsp;
-    const url = <span class="cstat-no" title="statement not covered" >`https://api.themoviedb.org/3/discover/movie?include_adult=trues&amp;without_genres=28%2C%2080%2C%2099%2C%2036%2C%2027%2C%209648%2C%20878%2C%2053%2C%2010752%2C%2037&amp;api_key=${apiKey}&amp;page=${page}&amp;sort_by=${sortBy}&amp;with_genres=${filterBy}`;</span>
-<span class="cstat-no" title="statement not covered" >    fetch(url)</span>
-    .then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; <span class="cstat-no" title="statement not covered" >res.json())</span>
-    .then(<span class="fstat-no" title="function not covered" >js</span>on =&gt; <span class="cstat-no" title="statement not covered" >setMoviesList(json.results))</span>
+    const url = `https://api.themoviedb.org/3/discover/movie?include_adult=trues&amp;without_genres=28%2C%2080%2C%2099%2C%2036%2C%2027%2C%209648%2C%20878%2C%2053%2C%2010752%2C%2037&amp;api_key=${apiKey}&amp;page=${page}&amp;sort_by=${sortBy}&amp;with_genres=${filterBy}`;
+    fetch(url)
+    .then(res =&gt; res.json())
+    .then(json =&gt; setMoviesList(json.results))
 }
 &nbsp;
-const handleSortByChange = <span class="fstat-no" title="function not covered" >(e</span>vent) =&gt; {
-<span class="cstat-no" title="statement not covered" >  console.log(event);</span>
-<span class="cstat-no" title="statement not covered" >  setSortBy(event.target.value);</span>
+const handleSortByChange = (event) =&gt; {
+  setSortBy(event.target.value);
 }
 &nbsp;
-const handleFilterByChange = <span class="fstat-no" title="function not covered" >(e</span>vent) =&gt; {
-<span class="cstat-no" title="statement not covered" >  setFilterBy(event.target.value);</span>
+const handleFilterByChange = (event) =&gt; {
+  setFilterBy(event.target.value);
 }
 &nbsp;
-useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >    getMovies(page, sortBy, filterBy);</span>
+useEffect(() =&gt; {
+    getMovies(page, sortBy, filterBy);
+
 }, [page, sortBy, filterBy])
 &nbsp;
   return ( 
@@ -199,7 +213,9 @@ export default App
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-03T16:16:54.485Z
+
+                at 2023-11-01T23:25:28.199Z
+
             </div>
         <script src="../prettify.js"></script>
         <script>

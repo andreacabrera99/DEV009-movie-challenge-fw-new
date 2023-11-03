@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -95,19 +95,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,23 +122,23 @@ import './Pagination.css'
 &nbsp;
 const Pagination = ({page, setPage}) =&gt; {
 &nbsp;
-  const previousClick = () =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if(page===1){
-<span class="cstat-no" title="statement not covered" >      setPage(1)</span>
+  const handlePreviousClick = () =&gt; {
+    if(page===1){
+      setPage(1)
     } else{
       setPage(page-1)
     }
   }
 &nbsp;
-  const nextClick = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >    setPage(page+1)</span>
+  const handleNextClick = () =&gt; {
+    setPage(page+1)
   }
 &nbsp;
   return (
     &lt;div className="pagination"&gt;
-    &lt;button className="button" data-testid="prevButton" onClick={previousClick}&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAQBJREFUaEPtl+EJQjEQg/M20U10E51MR3EUR5GCBXmo9GguRyH9fdeXLzna1w2Lr21x/TBAdYJOwAlMOuARmjRwut0JTFs4uYETCBh4AvAI1A+VqhK4ALgBuAO4DikbLFIAdPFdEhUiG2AvvkOcWeOUCfBLfBuhlgJlZQFIxDcHMgBk4jMApOLZAHLxTIAS8SyAMvEMgFLxBnjfRKUpsO6BMggWQAujBIIJUALBBpBDZABIIbIAZBCZAP8gjgCejAdBNsA3iCUeNHtz+xFLFc/4lYhMwYE1Np8fVYxQBDJca4CwZeQGJ0A2NLydEwhbRm5wAmRDw9s5gbBl5IblE3gB1SUuMTeF2uwAAAAASUVORK5CYII=" className="arrow"/&gt;&lt;/button&gt;
-    &lt;button className="button" data-testid="pageButton"&gt;{page}&lt;/button&gt;
-    &lt;button className="button" data-testid="nextButton" onClick={nextClick}&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAPdJREFUaEPtl8EJAlEMRGc7sRQ7USvTTrQTLUVyWNjDCoHkRRbmn/aQhHkzH7J/0cHPcnD9MsC/E3QCTqDogK9Q0cByuxMoW1gc4AR+GHiW9Cqam2onEnhIuki6SYpv9HQDrOJX0ThEJ0Bcm+eO3ShEJ0Bov0q6T0J0A4xDEACjEBTAGAQJMAJBA+AQEwAoxBQABmGA5I8OtuAmEsDEh3k0ACqeBsDFkwAj4imAMfEEwKj4boCTpPfkW6AbYG/boq8xAmALgYunAGJuXKdPckuXyuhFVhKXaTZAxiWyxgmQ7mZmO4GMS2SNEyDdzcx2AhmXyJrDJ/AF7R4uMZuOMGYAAAAASUVORK5CYII=" className="arrow"/&gt;&lt;/button&gt;
+    &lt;button className="button" data-testid="prevButton" onClick={handlePreviousClick}&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAQBJREFUaEPtl+EJQjEQg/M20U10E51MR3EUR5GCBXmo9GguRyH9fdeXLzna1w2Lr21x/TBAdYJOwAlMOuARmjRwut0JTFs4uYETCBh4AvAI1A+VqhK4ALgBuAO4DikbLFIAdPFdEhUiG2AvvkOcWeOUCfBLfBuhlgJlZQFIxDcHMgBk4jMApOLZAHLxTIAS8SyAMvEMgFLxBnjfRKUpsO6BMggWQAujBIIJUALBBpBDZABIIbIAZBCZAP8gjgCejAdBNsA3iCUeNHtz+xFLFc/4lYhMwYE1Np8fVYxQBDJca4CwZeQGJ0A2NLydEwhbRm5wAmRDw9s5gbBl5IblE3gB1SUuMTeF2uwAAAAASUVORK5CYII=" className="arrow"/&gt;&lt;/button&gt;
+    &lt;button className="button" &gt;{page}&lt;/button&gt;
+    &lt;button className="button" data-testid="nextButton" onClick={handleNextClick}&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAPdJREFUaEPtl8EJAlEMRGc7sRQ7USvTTrQTLUVyWNjDCoHkRRbmn/aQhHkzH7J/0cHPcnD9MsC/E3QCTqDogK9Q0cByuxMoW1gc4AR+GHiW9Cqam2onEnhIuki6SYpv9HQDrOJX0ThEJ0Bcm+eO3ShEJ0Bov0q6T0J0A4xDEACjEBTAGAQJMAJBA+AQEwAoxBQABmGA5I8OtuAmEsDEh3k0ACqeBsDFkwAj4imAMfEEwKj4boCTpPfkW6AbYG/boq8xAmALgYunAGJuXKdPckuXyuhFVhKXaTZAxiWyxgmQ7mZmO4GMS2SNEyDdzcx2AhmXyJrDJ/AF7R4uMZuOMGYAAAAASUVORK5CYII=" className="arrow"/&gt;&lt;/button&gt;
     &lt;/div&gt;
   )
 }
@@ -151,7 +151,7 @@ export default Pagination
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-26T20:39:07.602Z
+                at 2023-11-01T23:20:43.409Z
             </div>
         <script src="../prettify.js"></script>
         <script>

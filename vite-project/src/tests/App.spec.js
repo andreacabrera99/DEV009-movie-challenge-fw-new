@@ -1,5 +1,5 @@
 
-import { render, waitFor, screen } from "@testing-library/react";
+import { render, waitFor, screen, fireEvent} from "@testing-library/react";
 import "@testing-library/jest-dom";
 import React from "react";
 import App from "../App.jsx"
@@ -14,11 +14,27 @@ global.fetch = () => {
 
 describe("App", () => {
 
-  it("should render App", async () => {
+  it("Debería renderizar la película", async () => {
       render(<App />);
 
      await waitFor(() => {
         expect(screen.getByText('Mary Poppins')).toBeInTheDocument();
       })
     });
+
+  it("Debería renderizar el selector de Order by", () => {
+    const { getByTestId } = render(<App/>);
+    const selectSortBy = getByTestId('sortSelector');
+
+    fireEvent.change(selectSortBy, {target: {value: 'popularity.desc'}});
+    expect(selectSortBy.value).toBe('popularity.desc');
+  });
+
+  it("Debería renderizar el selector de Filter by genre", () => {
+    const { getByTestId } = render(<App/>);
+    const selectorFilterBy = getByTestId('filterSelector');
+
+    fireEvent.change(selectorFilterBy, {target: {value: '18'}});
+    expect(selectorFilterBy.value).toBe('18');
+  });
 });
