@@ -3,7 +3,7 @@ import React from 'react'
 const Filter = ({onFilterByChange, selectedFilter}) => {
 
   return (
-    <select className='selector' onChange={onFilterByChange} value={selectedFilter}>
+    <select className='selector' data-testid='filterSelector' onChange={onFilterByChange} value={selectedFilter}>
         <option defaultValue>Filter by genre</option>
         <option value="10749">Romance</option>
         <option value="35">Comedy</option>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import Movies from "./components/Movies"
 import Header from "./components/Header"
 import Pagination from "./components/Pagination"
@@ -19,7 +19,6 @@ function App() {
 }
 
 const handleSortByChange = (event) => {
-  console.log(event);
   setSortBy(event.target.value);
 }
 

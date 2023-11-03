@@ -5,7 +5,7 @@ const Order = ({onSortByChange, selectedValue}) => {
 
   return (
     <div>
-    <select className='selector' onChange={onSortByChange} value={selectedValue}>
+    <select className='selector' data-testid='sortSelector' onChange={onSortByChange} value={selectedValue}>
     <option defaultValue>Order by</option>
     <option value="popularity.asc">Less popular</option>
     <option value="popularity.desc">Most popular</option>
