@@ -1,0 +1,19 @@
+.errorContainer{
+    display:grid;
+    place-items: center;
+    margin-top: 18%;
+}
+
+.errorTitle{
+    font-family: Georgia;
+    font-size: 4em;
+}
+.errorContent{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 2em;
+}
+.backLink{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1em;
+    padding-top: 2em;
+}

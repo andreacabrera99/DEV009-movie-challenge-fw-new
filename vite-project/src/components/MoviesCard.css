@@ -15,7 +15,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: .1px;
     padding: .1px;
     height: 85px;
 }
@@ -27,6 +26,7 @@ body{
     font-weight: lighter;
     font-size: 20px;
     background: #fff;
+    align-self: center;
 }
 .date{
     font-family: "Fira Sans", sans-serif;
@@ -35,4 +35,9 @@ body{
     background: #fff;
     display: flex;
     justify-content: center;
+}
+.details{
+    font-family: "Gill Sans", sans-serif;
+    align-self: center;
+    padding-top: 1em;
 }
