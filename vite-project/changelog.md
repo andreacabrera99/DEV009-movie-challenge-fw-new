@@ -1,3 +1,16 @@
+## 1.2.1 - 07/11/23
+
+### Sprint learnings
+- Aprendí a elevar el estado.
+- Aprendí sobre react router.
+
+### Added
+
+- Agregué la funcionalidad de los componentes de la segunda historia de usuario. 
+- Agregué los tests de la segunda historia de usuario.
+- Agregué el ruteo.
+
+
 ## 1.1.1 - 30/10/23
 
 ### Sprint learnings
@@ -6,11 +19,11 @@
 
 ### Added
 
-Agregué la versión estática de los componentes de la segunda historia de usuario. 
+- Agregué la versión estática de los componentes de la segunda historia de usuario. 
 
 ### Changed
 
-Cambié el borde de las cards atendiende a feedback que recibí.
+- Cambié el borde de las cards atendiendo a feedback que recibí.
 
 
 ## 1.1.0 - 24/10/23
@@ -24,11 +37,11 @@ Cambié el borde de las cards atendiende a feedback que recibí.
 
 ### Added
 
-Agregué el componente header y el de paginación. 
+- Agregué el componente header y el de paginación. 
 
 ### Changed
 
-Cambié el componente paginación de como lo tenía pensado; ahora sólo muestra el número de página actual y las flechas para avanzar o retroceder.
+- Cambié el componente paginación de como lo tenía pensado; ahora sólo muestra el número de página actual y las flechas para avanzar o retroceder.
 
 
 ## 1.0.0 - 17/10/23
