@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import './MovieDetail.css'
 import Header from './Header'
 
-const getMoviesPoster = (poster_path) => {
+export const getMoviesPoster = (poster_path) => {
   return `https://image.tmdb.org/t/p/w500/${poster_path}`;
 }
 
-const MovieDetail = () => {
+export const MovieDetail = () => {
 
   const [movieDetail, setMovieDetail] = useState();
   const { id } = useParams();
@@ -34,21 +34,23 @@ const MovieDetail = () => {
     getMoviesDetails(id);
   }, [id])
 
-
-const handleCloseTab = () => {
-  window.close();
-};
+  console.log(movieDetail);
   return (
     <>
     <Header showSelectors={false}/>
     <article className='movieDetails'>
-      {movieDetail !== undefined ? (<> <div className='head'><div onClick={handleCloseTab} className='backButton'><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAQBJREFUaEPtl+EJQjEQg/M20U10E51MR3EUR5GCBXmo9GguRyH9fdeXLzna1w2Lr21x/TBAdYJOwAlMOuARmjRwut0JTFs4uYETCBh4AvAI1A+VqhK4ALgBuAO4DikbLFIAdPFdEhUiG2AvvkOcWeOUCfBLfBuhlgJlZQFIxDcHMgBk4jMApOLZAHLxTIAS8SyAMvEMgFLxBnjfRKUpsO6BMggWQAujBIIJUALBBpBDZABIIbIAZBCZAP8gjgCejAdBNsA3iCUeNHtz+xFLFc/4lYhMwYE1Np8fVYxQBDJca4CwZeQGJ0A2NLydEwhbRm5wAmRDw9s5gbBl5IblE3gB1SUuMTeF2uwAAAAASUVORK5CYII="  className='backImage'/>Back to movies list</div>
+      {movieDetail !== undefined ? (<> <div className='head'>
         <img src={getMoviesPoster(movieDetail.poster_path)} alt={movieDetail.original_title} className="moviePoster"></img>
         </div>
         <div className='detailContainer'>
         <h1 className='movieTitle'>{movieDetail.original_title}</h1>
+        <h2 className='tagline'>{movieDetail.tagline}</h2>
         <h2 className='movieReleaseDate'>Release year: {movieDetail.release_date.slice(0, 4)}</h2>
-        <div className='genres'><ul>Genres:{movieDetail.genres.map(genre => (<li>{genre.name}</li>)) }</ul></div>
+        <div className='genres'>
+          <ul>
+          Genres:{movieDetail.genres.map(genre => (<li key={genre.id}>{genre.name}</li>)) }
+          </ul>
+          </div>
         <div className='votes'>
         <h3 className='voteAverage'>Vote average: {movieDetail.vote_average} /10 ★</h3>
         <h3 className='voteCount'>Total votes: {movieDetail.vote_count}</h3>

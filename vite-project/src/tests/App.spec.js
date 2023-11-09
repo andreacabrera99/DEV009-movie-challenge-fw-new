@@ -3,7 +3,7 @@ import { render, waitFor, screen, fireEvent} from "@testing-library/react";
 import { MemoryRouter } from 'react-router-dom'; 
 import "@testing-library/jest-dom";
 import React from "react";
-import App from "../App.jsx"
+import App from "../App.jsx";
 
 global.fetch = () => {
   return Promise.resolve({
