@@ -1,5 +1,6 @@
 
 import { render, waitFor, screen, fireEvent} from "@testing-library/react";
+import { MemoryRouter } from 'react-router-dom'; 
 import "@testing-library/jest-dom";
 import React from "react";
 import App from "../App.jsx"
@@ -15,7 +16,11 @@ global.fetch = () => {
 describe("App", () => {
 
   it("Debería renderizar la película", async () => {
-      render(<App />);
+      render(
+      <MemoryRouter>
+      <App />
+      </MemoryRouter>
+      );
 
      await waitFor(() => {
         expect(screen.getByText('Mary Poppins')).toBeInTheDocument();

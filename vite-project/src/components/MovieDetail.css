@@ -1,0 +1,70 @@
+.head{
+    display: grid;
+}
+.movieDetails{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 90px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px;
+}
+.backImage{
+    height: 15px;
+    cursor: pointer;
+}
+.backButton{
+    font-size: 15px;
+    font-family: "Gill Sans", sans-serif;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+.moviePoster{
+    height: 500px;
+}
+.detailContainer{
+    display: grid;
+    align-content: center;  
+    gap: 20px;
+}
+.votes{
+    margin-left: 800px;
+    margin-top: -120px;
+    display: grid;
+    grid-template-rows: 40px 40px;
+}
+.movieTitle{
+    font-family: Georgia; 
+    font-size: 2.2em;
+}
+.movieReleaseDate{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+.genres{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter; 
+    font-size: 1.2em;
+}
+.voteAverage{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter; 
+    font-size: 1.2em;
+}
+.voteCount{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter; 
+    font-size: 1.2em;
+}
+.movieOverview{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter; 
+    font-size: 1.2em;
+}
+.overview{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter; 
+    font-size: 1em;
+}

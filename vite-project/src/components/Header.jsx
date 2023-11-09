@@ -1,9 +1,10 @@
+
 import './Header.css'
 import React from 'react'
 import Order from './Order'
 import Filter from './Filter'
 
-const Header = ({selectedSortByValue, onSortByChange, selectedFilterByValue, onFilterByChange}) => {
+const Header = ({selectedSortByValue, onSortByChange, selectedFilterByValue, onFilterByChange, showSelectors}) => {
 
     return (
     <div className="header" data-testid="header">
@@ -11,10 +12,12 @@ const Header = ({selectedSortByValue, onSortByChange, selectedFilterByValue, onF
     <div className="padding">
     <h1 className="movieBox">Moviebox</h1>
     </div>
+    {showSelectors && (
     <div className='selectors'>
         <Filter selectedFilter={selectedFilterByValue} onFilterByChange={onFilterByChange}/>
         <Order selectedValue={selectedSortByValue} onSortByChange={onSortByChange}/>
     </div>
+    )}
     </div>
     )
 }
