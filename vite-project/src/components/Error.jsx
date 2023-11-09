@@ -10,7 +10,7 @@ const Error = () => {
     <div className='errorContainer'>
     <h1 className='errorTitle'>Error</h1>
     <p className='errorContent'>{error.statusText || error.message}</p>
-    <Link to={'/'} className='backLink'>Back to movies list</Link>
+    <Link to={'/'} className='backLink' data-testid="backLink">Back to movies list</Link>
     </div>
   )
 }
