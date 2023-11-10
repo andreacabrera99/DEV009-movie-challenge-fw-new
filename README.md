@@ -1,4 +1,4 @@
-# Movie Challenge con Framework
+# Movie Challenge con React
 
 ## Índice
 
