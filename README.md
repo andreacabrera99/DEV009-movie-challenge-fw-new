@@ -108,15 +108,15 @@ A partir de estos bocetos después se llevó a cabo un prototipo de alta fidelid
 ![alta](./vite-project/docs/figma.png)
 
 Como un último paso previo al código, se usó esta versión de alta fidelidad para separar la UI en una jerarquía de componentes. 
-![jerarquía](./docs/excalidraw.png)
+![jerarquía](./vite-project/docs/excalidraw.png)
 
 El producto final tuvo algunos ajustes, pero en general se cuidó el diseño inicial.
-![final](./docs/cards.png)
+![final](./vite-project/docs/cards.png)
 
 ## 7. Organización del proyecto
 Para la organización del proyecto, se utilizó el siguiente board en [Github Projects](https://github.com/users/andreacabrera99/projects/3), donde se llevó a cabo la planeación del flujo de trabajo a través de milestones y issues en torno a la división de tareas según los tres historias de usuario.
 
-![board](./docs/githubproject.png)
+![board](./vite-project/docs/githubproject.png)
 
 ## 8. Documentación
 - [Product owner](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
