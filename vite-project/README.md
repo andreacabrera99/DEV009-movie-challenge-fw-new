@@ -101,22 +101,22 @@ el filtro y ordenamiento.
 
 ## 6. Diseño del producto
 Para diseñar la interfaz se contó primero con un prototipo de baja fidelidad con las dos vistas de la SPA.
-![baja](./vite-project/docs/movie-list.png)
-![baja2](./vite-project/docs/movie-detail.png)
+![baja](./docs/movie-list.png)
+![baja2](./docs/movie-detail.png)
 
 A partir de estos bocetos después se llevó a cabo un prototipo de alta fidelidad con su versión dinámica en [figma](https://www.figma.com/proto/OcM9RLZOJYDmoVKFDUKcUu/Moviebox?type=design&node-id=18-385&t=7WnAPz1MHbtzAxjA-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A132). 
-![alta](./vite-project/docs/figma.png)
+![alta](./docs/figma.png)
 
 Como un último paso previo al código, se usó esta versión de alta fidelidad para separar la UI en una jerarquía de componentes. 
-![jerarquía](./vite-project/docs/excalidraw.png)
+![jerarquía](./docs/excalidraw.png)
 
 El producto final tuvo algunos ajustes, pero en general se cuidó el diseño inicial.
-![final](./vite-project/docs/cards.png)
+![final](./docs/cards.png)
 
 ## 7. Organización del proyecto
 Para la organización del proyecto, se utilizó el siguiente board en [Github Projects](https://github.com/users/andreacabrera99/projects/3), donde se llevó a cabo la planeación del flujo de trabajo a través de milestones y issues en torno a la división de tareas según los tres historias de usuario.
 
-![board](./vite-project/docs/githubproject.png)
+![board](./docs/githubproject.png)
 
 ## 8. Documentación
 - [Product owner](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
