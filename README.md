@@ -105,7 +105,7 @@ Para diseñar la interfaz se contó primero con un prototipo de baja fidelidad c
 ![baja2](./docs/movie-detail.png)
 
 A partir de estos bocetos después se llevó a cabo un prototipo de alta fidelidad con su versión dinámica en [figma](https://www.figma.com/proto/OcM9RLZOJYDmoVKFDUKcUu/Moviebox?type=design&node-id=18-385&t=7WnAPz1MHbtzAxjA-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=10%3A132). 
-![alta](./docs/figma.png)
+![alta](./vite-project/docs/figma.png)
 
 Como un último paso previo al código, se usó esta versión de alta fidelidad para separar la UI en una jerarquía de componentes. 
 ![jerarquía](./docs/excalidraw.png)
