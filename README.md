@@ -33,7 +33,7 @@ La página Moviebox cuenta con las siguientes funcionalidades para el catálogo 
 - Detalles de las películas: al hacer click en la sección 'See more' de la tarjeta de una película se abre una nueva pestaña con más detalles sobre dicha película en específico.
 
 ## 4. Descripción de archivos
-* `components`: para la configuración de archivos con las funciones principales se siguió la lógica de los componentes, por lo que cada componente cuenta con su propio archivo de JSX, CSS (ambos en la carpeta `components`) y tests (en la carpeta `test`).  
+* `components`: para la configuración de archivos con las funciones principales se siguió la lógica de los componentes, por lo que cada componente cuenta con su propio archivo de JSX, CSS (ambos en la carpeta `components`) y tests (en la carpeta `tests`).  
 * `App.jsx`: contiene la petición principal a la API para el renderizado de películas.
 * `main.jsx`: contiene el ruteo y la renderización general de toda la interfaz.
 
