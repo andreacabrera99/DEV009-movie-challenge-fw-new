@@ -114,7 +114,7 @@ El producto final tuvo algunos ajustes, pero en general se cuidó el diseño ini
 ![final](./vite-project/docs/cards.png)
 
 ## 7. Organización del proyecto
-Para la organización del proyecto, se utilizó el siguiente board en [Github Projects](https://github.com/users/andreacabrera99/projects/3), donde se llevó a cabo la planeación del flujo de trabajo a través de milestones y issues en torno a la división de tareas según los tres historias de usuario.
+Para la organización del proyecto, se utilizó el siguiente board en [Github Projects](https://github.com/users/andreacabrera99/projects/3), donde se llevó a cabo la planeación del flujo de trabajo a través de milestones y issues en torno a la división de tareas según las tres historias de usuario.
 
 ![board](./vite-project/docs/githubproject.png)
 
