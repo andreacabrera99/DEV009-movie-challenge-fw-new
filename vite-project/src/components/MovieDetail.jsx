@@ -52,7 +52,7 @@ export const MovieDetail = () => {
           </ul>
           </div>
         <div className='votes'>
-        <h3 className='voteAverage'>Vote average: {movieDetail.vote_average} /10 ★</h3>
+        <h3 className='voteAverage'>Vote average: {movieDetail.vote_average} /10★</h3>
         <h3 className='voteCount'>Total votes: {movieDetail.vote_count}</h3>
         </div>
         <h1 className='movieOverview'>Overview:</h1>
