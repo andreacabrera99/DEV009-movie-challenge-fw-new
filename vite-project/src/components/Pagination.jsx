@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Pagination.css'
 
 const Pagination = ({page, setPage}) => {
@@ -8,12 +8,18 @@ const Pagination = ({page, setPage}) => {
       setPage(1)
     } else{
       setPage(page-1)
+      window.scrollTo(0, 0);
     }
   }
 
   const handleNextClick = () => {
     setPage(page+1)
+    window.scrollTo(0, 0);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   return (
     <div className="pagination">
