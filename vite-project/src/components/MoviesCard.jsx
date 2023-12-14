@@ -14,8 +14,10 @@ const MoviesCard = ({poster_path, title, release_date, id}) =>{
     <div className="card">
     <img src = {getMoviesPoster(poster_path)} alt={title} className="poster"></img>
     <div className="text">
+    <div>
     <h1 className="title" data-testid="title">{title}</h1>
     <p className="date">{formattedDate}</p>
+    </div>
     <Link to={`/detail/${id}`} target="_blank" rel="noopener noreferrer" className='details'>See more</Link>
     </div>
     </div>
