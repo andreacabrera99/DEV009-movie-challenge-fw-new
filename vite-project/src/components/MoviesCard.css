@@ -8,16 +8,14 @@ body{
     display: grid;
     place-content: center;
     place-items: center;
+    grid-template-rows: auto auto;
     background: #fff;
     box-shadow: 5px 5px 5px grey;
 }
 .text{
     background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: .1px;
-    height: 85px;
+    display: grid;
+    grid-template-rows: 70% 36px;
 }
 .poster{
     width: 150px;
@@ -27,18 +25,17 @@ body{
     font-weight: lighter;
     font-size: 20px;
     background: #fff;
-    align-self: center;
+    text-align: center;
 }
 .date{
     font-family: "Fira Sans", sans-serif;
     font-weight: lighter;
     font-size: 15px;
     background: #fff;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .details{
     font-family: "Gill Sans", sans-serif;
-    align-self: center;
-    padding-top: 1em;
+    justify-self: center;
+    align-self: end;
 }
