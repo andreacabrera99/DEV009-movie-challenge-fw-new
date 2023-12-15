@@ -40,4 +40,18 @@ describe('MoviesCard', ()=>{
         expect(poster).toBeInTheDocument();
         expect(poster).toHaveAttribute('src', 'https://image.tmdb.org/t/p/w500/movie-poster.jpg');
     });
+
+    test('Debería devolver un mensaje que indique que no tiene una fecha válida', () => {
+        const movieDataWithoutDate = {
+            ...movies,
+            release_date: '',
+        };
+        render(
+        <MemoryRouter>
+        <MoviesCard {...movieDataWithoutDate}/>
+        </MemoryRouter>
+        );
+        const dateElement = screen.getByText('No release date');
+        expect(dateElement).toBeInTheDocument();
+    })
 })
